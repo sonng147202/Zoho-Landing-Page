@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  /*  */
+  --height-header-mobi: 4rem;
+  /* color */
+  /* background */
+  --bg-header: #fff;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+/* NAV */
+nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  height: var(--height-header-mobi);
+  width: 100%;
+  background: var(--bg-header);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px 0 35px;
+  flex-wrap: wrap;
+}
+
+nav .intro{
+  display: flex;
+  align-items: stretch;
+  height: 40px;
+  color: #000;
+  font-weight: 600;
+}
+
+nav .intro .line{
+  width: 1px;
+  height: 100%;
+  margin: 0 5px;
+  border-left: 1px solid #E0E0E0;
+}
+
+nav .menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li{
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* nav ul li a.active,
+nav ul li a:hover{
+  color: #E97730;
+  background: #000;
+} */
+
+nav .menu-btn{
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  padding: 0 35px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+nav .btn-hotline{
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background: #E97730;
+}
+/* END:NAV */
+
+/* BANNER */
+#banner{
+  margin-top: var(--height-header-mobi);
+  margin-bottom: 50px;
+}
+#banner .content{
+  width: 100%;
+  background-color: #FDF2CC;
+  border-radius: 24px;
+  padding: 50px 100px;
+  display: flex;
+}
+
+#banner .left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+#banner .left .intro{
+  display: none;  
+}
+
+#banner .intro .logo{
+  width: auto;
+  height: calc(var(--height-header-mobi) / 2);
+  display: inline-block;
+}
+
+#banner .left h1{
+  font-size: 45px;
+  font-weight: 700;
+}
+/* END:BANNER */
+
+/* SERVICE */
+.service{
+  margin-bottom: 25px;
+}
+.service .service__title{
+  color: #1975D2;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  margin: 25px 0;
+}
+.service .service__title span{
+  color: #222222;
+}
+/* .service .service__container{
+} */
+.service .service__item{
+  height: 100%;
+  padding: 35px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--bg-item-service);
+  border-radius: 10px;
+}
+.service .service__item .service__item--icon{
+  width: 55px;
+  height: 55px;
+  background-color: var(--bg-icon-service);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* END:SERVICE */
+
+/* APP STORE */
+.app-store{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.app-store .app-store__title{
+  margin-bottom: 25px;
+  color: #E97730;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.app-store .app-store__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+.app-store .app-store__container .app-store__item{
+  width: 85px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.app-store .app-store__item .app-store__item--icon{
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-store .app-store__item .app-store__item--name{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #413D3D;
+}
+/* END:APP STORE */
+
+@media (max-width: 992px) {
+  /* NAV/TABLET->MOBI */
+  nav{
+    padding: 0;
+  }
+
+  nav .menu-btn{
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  nav .menu-btn i{
+    display: block;
+  }
+
+  nav .intro{
+    display: none;
+  }
+
+  nav .menu{
+    height: var(--height-header-mobi);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    background: var(--bg-header);
+    /* height: 100vh; */
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.4s linear;
+  }
+
+  nav ul li{
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+  }
+
+  nav ul li a{
+    display: block;
+    padding: 25px 0;
+  }
+
+  /* nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: #E97730;
+  } */
+
+  nav .menu .btn-hotline{
+    height: 100%;
+    padding: 0;
+    flex: 1 1 auto;
+  }
+
+  /* #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  } */
+
+  #click:checked ~ ul{
+    top: var(--height-header-mobi);
+    transition: all 0.4s linear;
+  }
+  /* END:NAV/TABLET->MOBI */
+
+  /* BANNER/TABLET->MOBI */
+  #banner .left .intro{
+    display: block;  
+  }
+
+  #banner .container-fluid{
+    margin: 0;
+    padding: 0;
+  }
+
+  #banner .content{
+    padding: 15px 25px;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #banner .content .left{
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  /* END:BANNER/TABLET->MOBI */
+
+  /* SERVICE/TABLET->MOBI */
+
+  /* END:SERVICE/TABLET->MOBI */
+}
+
+@media (max-width: 768px) {
+  /* SERVICE/TABLET->MOBI */
+  .service .service__item .service__item--detail{
+    display: none;
+  }
+  /* END:SERVICE/TABLET->MOBI */
+}
