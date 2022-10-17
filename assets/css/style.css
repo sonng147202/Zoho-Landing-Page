@@ -10,6 +10,7 @@
 :root {
   /*  */
   --height-header-mobi: 4rem;
+  --height-footer-mobi: 4rem;
   /* color */
   /* background */
   --bg-header: #fff;
@@ -244,6 +245,97 @@ nav .btn-hotline{
   color: #413D3D;
 }
 /* END:APP STORE */
+
+/* FEATURE */
+.feature .feature__table{
+}
+.feature .feature__table tbody .fa-check{
+  color: #27AE60;
+}
+.feature .feature__table tbody .fa-xmark{
+  color: #F0483E;
+}
+.feature .feature__table .feature__table--col-title{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 15px 30px;
+}
+.feature .feature__table .feature__table--col-title:nth-child(1){
+  background-color: #1975D2;
+  border-radius: 5px 0px 0px 0px;
+}
+.feature .feature__table .feature__table--col-title:nth-child(2){
+  background-color: #F0483E;
+}
+.feature .feature__table .feature__table--col-title:nth-child(3){
+  background-color: #E97730;
+  border-radius: 0px 5px 0px 0px;
+}
+.feature .feature__table .feature__table--tag-name{
+  background-color: var(--bg-tag-name);
+}
+.feature .feature__table .feature__table--tag-name h3{
+  color: #413D3D;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+/* END:FEATURE */
+
+/* FOOTER */
+.footer .footer__contact{
+  background-color: #E97730;
+}
+.footer .footer__contact .item{
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.footer__contact .item .icon{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.footer__contact .item .content{
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__contact .item .content h5{
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+.footer__contact .item .content span{
+  font-weight: 700;
+  font-size: 18px;
+}
+.footer .footer__main{
+  background-color: #202124;
+}
+.footer .footer__main .footer__nav{
+  height: var(--height-footer-mobi);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202124;
+}
+.footer .footer__nav .footer__nav-logo{
+  height: 40px;
+}
+.footer .footer__nav .footer__sub-nav{
+  display: flex;
+}
+.footer__nav .footer__sub-nav > li > a{
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 15px;
+}
+/* END:FEATURE */
 
 @media (max-width: 992px) {
   /* NAV/TABLET->MOBI */
