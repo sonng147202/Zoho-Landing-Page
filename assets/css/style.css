@@ -447,5 +447,20 @@ nav .btn-hotline{
   .service .service__item .service__item--detail{
     display: none;
   }
+  .tabhindin{
+    display: none;
+  }
   /* END:SERVICE/TABLET->MOBI */
+  .feature .feature__table .feature__table--col-title:nth-child(1){
+   display: none;
+  }
+  .feature .feature__table .feature__table--col-title:nth-child(2){
+    width: 218px;
+  }
+  .feature .feature__table .feature__table--col-title:nth-child(3){
+    width: 218px;
+  }
+}
+.tabui{
+  display: block;
 }
