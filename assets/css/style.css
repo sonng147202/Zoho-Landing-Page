@@ -362,6 +362,28 @@ nav .btn-hotline{
 }
 /* END:PERFORMANCE */
 
+/* FAQ */
+.faq{
+  background: #F3F3F3;
+}
+.faq .faq__title{
+  text-align: center;
+}
+.faq .accordion .accordion-item{
+  border: none;
+  background-color: transparent;
+}
+.faq .accordion .accordion-button{
+  color: #222222;
+  font-weight: 700;
+  display: block;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+/* END:FAQ */
+
 /* FOOTER */
 footer .border-dash {
   border-bottom-width: 1px;
