@@ -7,6 +7,7 @@
     <title>Zoho Landing Page</title>
     <link rel="stylesheet" href="./assets/font/fontawesome-pro/css/all.css">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
             </div>
             <div class="menu">
                 <input type="checkbox" id="click">
-                <label for="click" class="menu-btn">
+                <label for="click" class="menu-btn mx-4">
                     <i class="fa-regular fa-bars"></i>
                 </label>
                 <ul>
@@ -623,11 +624,77 @@
                 </div>
             </div>
         </div>
-        <div class="price">
-            <h1 class="text-center">Bảng giá chi tiết</h1>
-            <div class="price__slide">
-
+        <div class="part-324 py-5">
+            <h1 class="text-center mb-5">Bảng giá chi tiết</h1>
+            <!-- Swiper -->
+            <div class="pricing-table container">
+                <div class="swiper-pagination"></div>
+                <div class="swiper pricingTable">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="pricing h-100 w-100">
+                                <h3 class="pricing-title">Mail Free</h3>
+                                <h1 class="pricing-package">Free vĩnh viễn</h1>
+                                <p>Email theo tên miền</p>
+                                <button class="pricing-btn" type="button">Đăng ký ngay</button>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Chỉ dùng tính năng Email</span>
+                                </p>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Tối đa 5 user</span>
+                                </p>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Dung lượng email 5GB/user</span>
+                                </p>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Dung lượng tối đa file đính kèm email 25MB</span>
+                                </p>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Dùng trên nền tảng Zoho Web Mail</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pricing h-100 w-100">
+                                <h3 class="pricing-title">Standard</h3>
+                                <h1 class="pricing-package">94,500 <span class="pricing-vnd">VND</span></h1>
+                                <p class="gray">/user/tháng</p>
+                                <button class="pricing-btn" type="button">Đăng ký ngay</button>
+                                <div class="pricing-recurring">
+                                    Thanh toán hàng năm
+                                </div>
+                                <div class="pricing-only">
+                                    <span>Chỉ còn</span>
+                                    <h1>70,000 <span class="pricing-vnd">VND</span></h1>
+                                    <p class="gray">Email theo tên miền</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pricing h-100 w-100">
+                                <h3 class="pricing-title">Professional</h3>
+                                <h1 class="pricing-package">165,000 <span class="pricing-vnd">VND</span></h1>
+                                <p class="gray">Account/ tháng</p>
+                                <button class="pricing-btn" type="button">Đăng ký ngay</button>
+                                <div class="pricing-recurring">
+                                    Thanh toán hàng năm
+                                </div>
+                                <div class="pricing-only">
+                                    <span>Chỉ còn</span>
+                                    <h1>140,000 <span class="pricing-vnd">VND</span></h1>
+                                    <p class="gray">Email theo tên miền</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </div>
         <div class="faq">
             <div class="container py-5">
@@ -811,7 +878,8 @@
     </div>
     <script src="./assets/font/fontawesome-pro/js/all.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/jquery/jquery.min.js"></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>
