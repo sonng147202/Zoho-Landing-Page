@@ -513,7 +513,61 @@ nav .btn-hotline{
   color: #fff;
   background: #F0483E;
 }
+
+.part-324 .discount-chart{
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+  background-color: #FFFFFF;
+}
+.discount-chart .discount-chart__title{
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.discount-chart .discount-chart__sub-title{
+  margin-bottom: 35px;
+  text-align: center;
+}
+.discount-chart .discount-chart__sub-title p{
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
 /* END:part-324 */
+
+/* ADVANTAGES */
+.advantages{
+  margin: 50px 0;
+}
+.advantages .advantages-title{
+  padding: 0 4rem;
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+.advantages .advantages-item{
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  text-align: center;
+  background-color: #F1F1F1;
+}
+.advantages .advantages-item img{
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 20px;
+}
+.advantages .advantages-item h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+/* END:ADVANTAGES */
 
 /* FAQ */
 .faq{
@@ -753,6 +807,10 @@ footer .border-dash {
   .pricing-table .swiper .swiper-slide{
     width: 100%;
     padding: 0;
+  }
+  .part-324 .discount-chart{
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .footer .footer__contact .item{
