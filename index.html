@@ -7,6 +7,7 @@
     <title>Zoho Landing Page</title>
     <link rel="stylesheet" href="./assets/font/fontawesome-pro/css/all.css">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     
 </head>
@@ -20,13 +21,13 @@
             </div>
             <div class="menu">
                 <input type="checkbox" id="click">
-                <label for="click" class="menu-btn">
+                <label for="click" class="menu-btn mx-4">
                     <i class="fa-regular fa-bars"></i>
                 </label>
                 <ul>
-                   <li><a href="#">Tính năng</a></li>
-                   <li><a href="#">Bảng giá</a></li>
-                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#feature">Tính năng</a></li>
+                   <li><a href="#pricing-table">Bảng giá</a></li>
+                   <li><a href="#faq">FAQ</a></li>
                 </ul>
                 <a href="tel:19001786" class="btn-hotline d-flex justify-content-center align-items-center">
                     <span>Hotline 19001786</span>
@@ -54,7 +55,7 @@
                             Giải pháp tuyệt vời thay thế Google Workspace và Microsoft 365 với chất lượng tương đương, nhưng giá rẻ hơn đến 50%
                         </p>
                         <div class="mb-4">
-                            <a href="#" class="btn btn-danger">
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#registerModal">
                                 Đăng ký dùng thử 15 ngày
                             </a>
                         </div>
@@ -219,14 +220,14 @@
                 </div>
             </div>
         </div>
-        <div class="feature">
+        <div id="feature" class="feature">
             <div class="container">
                 <table class="feature__table table table-borderless">
                     <thead>
                         <tr>
                             <th scope="col" class="feature__table--col-title">Tính năng/Phiên bản</th>
-                            <th scope="col" class="feature__table--col-title" id="tab-standard">Standard</th>
-                            <th scope="col" class="feature__table--col-title" id="tab-rofessional">Professional</th>
+                            <th scope="col" class="feature__table--col-title text-center" id="tab-standard">Standard</th>
+                            <th scope="col" class="feature__table--col-title text-center" id="tab-rofessional">Professional</th>
                         </tr>
                     </thead>
                         <tbody>
@@ -481,11 +482,395 @@
                 </table>
             </div>
         </div>
+        <div class="capacity">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="title">
+                            Dung lượng dùng chung của WorkDrive 
+                            được định nghĩa như sau
+                        </h1>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-12 col-lg-6">
+                        <div class="accordion">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="capacityHeadingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#capacityCollapseOne" aria-expanded="true" aria-controls="capacityCollapseOne">
+                                        1 giấy phép Workplace Standard
+                                    </button>
+                                </h2>
+                                <div id="capacityCollapseOne" class="accordion-collapse collapse show" aria-labelledby="capacityHeadingOne">
+                                    <div class="accordion-body">
+                                        <p>Bạn sẽ nhận được <code>10GB</code> bộ nhớ WorkDrive (100GB với bản Pro)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="capacityHeadingTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#capacityCollapseTwo" aria-expanded="true" aria-controls="capacityCollapseTwo">
+                                        2 giấy phép Workplace Standard
+                                    </button>
+                                </h2>
+                                <div id="capacityCollapseTwo" class="accordion-collapse collapse show" aria-labelledby="capacityHeadingTwo">
+                                    <div class="accordion-body">
+                                        <p>Tổ chức sẽ nhận được <code>20GB</code> bộ nhớ WorkDrive được chia 2 người dùng này (200GB với bản Pro)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="accordion">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="capacityHeadingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#capacityCollapseThree" aria-expanded="true" aria-controls="capacityCollapseThree">
+                                        3 - 10 giấy phép Workplace Standard
+                                    </button>
+                                </h2>
+                                <div id="capacityCollapseThree" class="accordion-collapse collapse show" aria-labelledby="capacityHeadingThree">
+                                    <div class="accordion-body">
+                                        <p>Toàn bộ tổ chức sẽ nhận được bộ nhớ chung <code>100GB</code> (1GB với bản Pro)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="capacityHeadingFour">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#capacityCollapseFour" aria-expanded="true" aria-controls="capacityCollapseFour">
+                                        11 giấy phép Workplace Standard trở lên
+                                    </button>
+                                </h2>
+                                <div id="capacityCollapseFour" class="accordion-collapse collapse show" aria-labelledby="capacityHeadingFour">
+                                    <div class="accordion-body">
+                                        <p>Mỗi người dùng bổ sung sẽ nhận được <code>10GB</code> bộ nhớ WorkDrive bổ sung vào bộ nhớ dùng chung cho toàn bộ tổ chức (100GB với bản Pro)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="warning">
+                            <i class="fa-regular fa-triangle-exclamation"></i> Lưu ý: Đây là dung lượng lưu trữ của WorkDrive không bao gồm lưu trữ email
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="performance">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 col-md-6">
+                        <div class="performance__info">
+                            <h1 class="performance__title mb-5">Bộ công cụ Office</h1>
+                            <div class="performance__content">
+                                <div class="performance__info-detail">
+                                    <p class="performance__name">
+                                        <img src="./assets/img/apps/writer-128.svg" alt="">
+                                        <span>Write:</span>
+                                    </p>
+                                    <p>Trình bày, soạn thảo văn bản</p>
+                                </div>
+                                <div class="performance__info-detail">
+                                    <p class="performance__name">
+                                        <img src="./assets/img/apps/sheet-128.svg" alt="">
+                                        <span>Sheet:</span>
+                                    </p>
+                                    <p>Phân tích dữ liệu với bảng tính</p>
+                                </div>
+                                <div class="performance__info-detail">
+                                    <p class="performance__name">
+                                        <img src="./assets/img/apps/show-128.svg" alt="">
+                                        <span>Show:</span>
+                                    </p>
+                                    <p>Tạo bản thuyết trình ấn tượng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="performance__img">
+                            <img src="./assets/img/group-37274.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="performance__img">
+                            <img src="./assets/img/group-37275.png" alt="">
+                        </div>
+                    </div>
+                    <div id="info-2" class="col-12 col-md-6">
+                        <div class="performance__info">
+                            <h1 class="performance__title mb-5">Cộng tác nhóm</h1>
+                            <div class="performance__content">
+                                <div class="performance__info-detail">
+                                    <p class="performance__name">
+                                        <img src="./assets/img/apps/workdrive-128.svg" alt="">
+                                        <span>Workdrive:</span>
+                                    </p>
+                                    <p>Lưu trữ an toàn dữ liệu trên Zoho Cloud</p>
+                                </div>
+                                <div class="performance__info-detail">
+                                    <p class="performance__name">
+                                        <img src="./assets/img/apps/meeting-128.svg" alt="">
+                                        <span>Meeting:</span>
+                                    </p>
+                                    <p>Họp trực tuyến từ bất kỳ nơi nào trên thế giới</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-12 col-md-6">
+                        <div class="performance__info">
+                            <h1 class="performance__title mb-5">Giao tiếp hợp nhất</h1>
+                            <div class="performance__content">
+                                <div class="performance__info-detail">
+                                    <p class="performance__name">
+                                        <img src="./assets/img/apps/mail-128.svg" alt="">
+                                        <span>Mail:</span>
+                                    </p>
+                                    <p>Email theo domain bảo mật cao cùng nhiều tính năng tiện lợi</p>
+                                </div>
+                                <div class="performance__info-detail">
+                                    <p class="performance__name">
+                                        <img src="./assets/img/apps/cliq-128.svg" alt="">
+                                        <span>Cliq:</span>
+                                    </p>
+                                    <p>Nhắn tin, gọi âm thanh hoặc video với đồng nghiệp linh hoạt</p>
+                                </div>
+                                <div class="performance__info-detail">
+                                    <p class="performance__name">
+                                        <img src="./assets/img/apps/connect-128.svg" alt="">
+                                        <span>Connect:</span>
+                                    </p>
+                                    <p>Xây dựng mạng xã hội nội bộ doanh nghiệp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="performance__img">
+                            <img src="./assets/img/group-37276.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pricing-table" class="part-324 py-5">
+            <h1 class="text-center mb-5">Bảng giá chi tiết</h1>
+            <!-- Swiper -->
+            <div class="pricing-table container my-5">
+                <div class="swiper-pagination"></div>
+                <div class="swiper pricingTable">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="pricing h-100 w-100">
+                                <h3 class="pricing-title">Mail Free</h3>
+                                <h1 class="pricing-package">Free vĩnh viễn</h1>
+                                <p>Email theo tên miền</p>
+                                <button class="pricing-btn" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký ngay</button>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Chỉ dùng tính năng Email</span>
+                                </p>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Tối đa 5 user</span>
+                                </p>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Dung lượng email 5GB/user</span>
+                                </p>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Dung lượng tối đa file đính kèm email 25MB</span>
+                                </p>
+                                <p class="pricing-feature">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Dùng trên nền tảng Zoho Web Mail</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pricing h-100 w-100">
+                                <h3 class="pricing-title">Standard</h3>
+                                <h1 class="pricing-package">94,500 <span class="pricing-vnd">VND</span></h1>
+                                <p class="gray">/user/tháng</p>
+                                <button class="pricing-btn" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký ngay</button>
+                                <div class="pricing-recurring">
+                                    Thanh toán hàng năm
+                                </div>
+                                <div class="pricing-only">
+                                    <span>Chỉ còn</span>
+                                    <h1>70,000 <span class="pricing-vnd">VND</span></h1>
+                                    <p class="gray">Email theo tên miền</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pricing h-100 w-100">
+                                <h3 class="pricing-title">Professional</h3>
+                                <h1 class="pricing-package">165,000 <span class="pricing-vnd">VND</span></h1>
+                                <p class="gray">Account/ tháng</p>
+                                <button class="pricing-btn" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký ngay</button>
+                                <div class="pricing-recurring">
+                                    Thanh toán hàng năm
+                                </div>
+                                <div class="pricing-only">
+                                    <span>Chỉ còn</span>
+                                    <h1>140,000 <span class="pricing-vnd">VND</span></h1>
+                                    <p class="gray">Email theo tên miền</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="discount-chart container py-5">
+                <h1 class="discount-chart__title">Dùng càng đông - Phí càng giảm</h1>
+                <div class="discount-chart__sub-title">
+                    <p>Giá chưa bao gồm thuế nhà thầu FCT 10%</p>
+                    <p>Dịch vụ không chịu VAT</p>
+                </div>
+                <img src="./assets/img/discount-chart.png" alt="">
+            </div>
+        </div>
+        <div class="advantages">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="advantages-title">Tại sao chọn đăng ký Zoho Workplace qua Codelovers Việt Nam</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="advantages-item">
+                            <img src="./assets/img/advantages/partnership.svg" alt="">
+                            <h3 class="advantages-item__name">Đại lý ủy quyền chính thức của Zoho Corporation tại Việt Nam</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="advantages-item">
+                            <img src="./assets/img/advantages/support.svg" alt="">
+                            <h3 class="advantages-item__name">Hỗ trợ tư vấn, giải đáp thắc mắc về Zoho 24/7</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="advantages-item">
+                            <img src="./assets/img/advantages/msg-sending.svg" alt="">
+                            <h3 class="advantages-item__name">Chuyển đổi miễn phí hệ thống mail cũ sang Zoho</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="advantages-item">
+                            <img src="./assets/img/advantages/credit-card.svg" alt="">
+                            <h3 class="advantages-item__name">Dùng thử 15 ngày, không yêu cầu thẻ tín dụng, xuất hóa đơn VAT sau khi thanh toán</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="advantages-item">
+                            <img src="./assets/img/advantages/cash-payment.svg" alt="">
+                            <h3 class="advantages-item__name">Hoàn tiền trong 30 ngày nếu khách hàng không hài lòng về Zoho</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="advantages-item">
+                            <img src="./assets/img/advantages/coin.svg" alt="">
+                            <h3 class="advantages-item__name">Chi phí cạnh tranh, tiết kiệm hơn so với giá niêm yết của Zoho</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="faq" class="faq">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="faq__title mb-5">FAQ</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="accordion" id="accordionFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseOne" aria-expanded="true" aria-controls="faq-collapseOne">
+                                        Các ứng dụng được bao gồm trong Zoho Workplace là gì?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseOne" class="accordion-collapse collapse show" aria-labelledby="faq-headingOne">
+                                    <div class="accordion-body">
+                                        Zoho Workplace bao gồm ba dãy phòng như được liệt kê bên dưới. Mỗi bộ phần mềm lần lượt bao gồm các ứng dụng liên quan liên quan đến một danh mục, được tích hợp với nhau theo ngữ cảnh.
+                                        Office Suite - Zoho Writer, Trang tính và Hiển thị
+                                        Bộ cộng tác - Zoho WorkDrive và cuộc họp
+                                        Mail Suite - Zoho Mail, Cliq và Connect.
+                                        Zoho Docs hiện được thay thế bằng Zoho Workdrive.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo" aria-expanded="false" aria-controls="faq-collapseTwo">
+                                        Các gói dung lượng có sẵn trong Zoho Workplace là gì?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseTwo" class="accordion-collapse collapse" aria-labelledby="faq-headingTwo">
+                                    <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseThree" aria-expanded="false" aria-controls="faq-collapseThree">
+                                        Người dùng Zoho Mail hiện tại có thể tiếp tục sử dụng gói hiện có không?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseThree" class="accordion-collapse collapse" aria-labelledby="faq-headingThree">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eveniet quis, aut at fugit tempora, esse tempore, dignissimos architecto praesentium numquam ipsum. Explicabo iure illo hic suscipit nam animi molestiae.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="#faq-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseFour" aria-expanded="false" aria-controls="faq-collapseFour">
+                                        Làm cách nào để đăng ký tài khoản Workplace?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseFour" class="accordion-collapse collapse" aria-labelledby="#faq-headingFour">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eveniet quis, aut at fugit tempora, esse tempore, dignissimos architecto praesentium numquam ipsum. Explicabo iure illo hic suscipit nam animi molestiae.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseFive" aria-expanded="false" aria-controls="faq-collapseFive">
+                                        Zoho chấp nhận các phương thức thanh toán nào?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseFive" class="accordion-collapse collapse" aria-labelledby="faq-headingFive">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eveniet quis, aut at fugit tempora, esse tempore, dignissimos architecto praesentium numquam ipsum. Explicabo iure illo hic suscipit nam animi molestiae.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
-            <div class="footer__contact pt-3">
+            <div class="footer__contact py-3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <div class="col-12 col-md-4 d-md-flex">
                             <div class="item">
                                 <div class="icon">
                                     <img src="./assets/img/contactsupportsetting.svg" alt="">
@@ -496,7 +881,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <div class="col-12 col-md-4 d-md-flex">
                             <div class="item">
                                 <div class="icon">
                                     <img src="./assets/img/contactsupport_contact.svg" alt="">
@@ -507,7 +892,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <div class="col-12 col-md-4 d-md-flex">
                             <div class="item">
                                 <div class="icon">
                                     <img src="./assets/img/contactsupport_email.svg" alt="">
@@ -543,14 +928,115 @@
                             </div>
                         </div>
                     </div>
+                    <div class="border-dash"></div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="info-place">
+                                <h3>Trụ Sở Chính Hà Nội</h3>
+                                <p>
+                                    Tầng 5, tòa nhà ACCI, số. 210 Lê Trọng Tấn, Phường Khương Mai, Quận Thanh Xuân, Hà Nội, Việt Nam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="info-place">
+                                <h3>Chi Nhánh Hồ Chí Minh</h3>
+                                <p>
+                                    Trung tâm Thương mại Sài Gòn thứ 22, 37 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, TP.HCM, Việt Nam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="info-place">
+                                <h3>Tokyo Office</h3>
+                                <p>
+                                    Tầng 4, Tòa nhà Shinei, Toyo-cho, 4-3-1 Toyo, Koto-ku, Tokyo 135-0016
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-dash"></div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="copyright">
+                                Copyright ©2022 Codelovers Vietnam. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
+
+        <div class="register-modal">
+            <!-- Modal -->
+            <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content w-100 m-0 m-auto">
+                    <div class="modal-header border-none">
+                    <h5 class="modal-title" id="registerModalLabel">Thông tin đăng ký</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="mb-3 d-flex form-outline-box">
+                        <label for="formGroupExampleInput" class="form-label m-0"><i class="fa-solid fa-user"></i></label>
+                        <input type="text" class="form-control form-checked" id="formGroupExampleInput"
+                        placeholder="Tên của anh chị">
+                    </div>
+                    <div class="mb-3 d-flex form-outline-box">
+                        <label for="formGroupExampleInput" class="form-label m-0"><i class="fa-solid fa-phone"></i></label>
+                        <input type="text" class="form-control form-checked" id="formGroupExampleInput" placeholder="số điện thoại">
+                    </div>
+                    <div class="mb-3 d-flex form-outline-box">
+                        <label for="formGroupExampleInput" class="form-label m-0"><i class="fa-solid fa-envelope"></i></label>
+                        <input type="text" class="form-control form-checked" id="formGroupExampleInput"
+                        placeholder="Email của anh chị">
+                    </div>
+                    <div class="mb-3 d-flex form-outline-box">
+                        <label for="formGroupExampleInput" class="form-label m-0"><i class="fa-solid fa-buildings"></i></label>
+                        <input type="text" class="form-control form-checked" id="formGroupExampleInput"
+                        placeholder="Tên công ty tổ chức của amnh chị đang làm việc">
+                    </div>
+                    <div class="mb-3 d-flex form-outline-box">
+                        <label for="formGroupExampleInput" class="form-label m-0"><i class="fa-solid fa-users"></i></label>
+                        <input type="text" class="form-control form-checked" id="formGroupExampleInput"
+                        placeholder="Số lượng nhân sự tại công ty/tổ chức">
+                    </div>
+                    </div>
+                    <div class="modal-footer justify-content-center border-none">
+                    <a type="button" class="btn btn-primary btn-checked" data-bs-toggle="modal"
+                        data-bs-target="#confirmModal">Gửi thông tin đăng kí</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                <div class="modal-dialog contaniner-box">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="circle_all">
+                        <div class="circle">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="box-text">
+                        <h5 class="title">Cảm ơn anh chị</h5>
+                        <p class="content">CodeLovers Vietnam sẽ phản hồi lại anh chị sớm nhất</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./assets/font/fontawesome-pro/js/all.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/jquery/jquery.min.js"></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/main.js"></script>
 </body>
 </html>
