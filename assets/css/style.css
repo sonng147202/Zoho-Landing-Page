@@ -316,7 +316,7 @@ nav .btn-hotline{
   background-color: transparent;
 }
 .accordion-button:not(.collapsed)::after{
-  background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+
 }
 .capacity .accordion .accordion-button{
   width: 100%;
@@ -375,7 +375,21 @@ nav .btn-hotline{
   
 }
 .performance__info .performance__content .performance__info-detail{
-  
+  display: flex;
+  align-items: center;
+}
+.performance__info .performance__info-detail .performance__name{
+  display: flex;
+  align-items: center;
+}
+.performance__info .performance__name img{
+  width: 35px;
+  height: 35px;
+}
+.performance__info .performance__name span{
+  width: 80px;
+  font-weight: 700;
+  margin: 0 10px;
 }
 /* END:PERFORMANCE */
 
@@ -691,6 +705,98 @@ footer .border-dash {
 
 /* END:FEATURE */
 
+/* MODAL */
+.register-modal .border-none {
+  border-color: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.register-modal .form-outline-box {
+  border: 1px solid #ced4da;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.register-modal .form-checked {
+  border: none !important;
+}
+.register-modal .form-control:focus {
+  color: #212529;
+  border-color: none !important;
+  border: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.register-modal .btn-checked {
+  width: 235px;
+  height: 46px;
+  border: none !important;
+  background: #e97730 !important;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ffffff;
+}
+.register-modal .box-text {
+  margin-top: 84px;
+}
+.register-modal .title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133.52%;
+  text-align: center;
+  color: #202124;
+}
+.register-modal .content {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 151.02%;
+  text-align: center;
+  color: #545454;
+}
+.register-modal .circle {
+  position: absolute;
+  left: 212px;
+  top: 9px;
+  color: #FFFFFF;
+  text-align: center;
+  box-sizing: border-box;
+  margin: auto;
+  width: 65px;
+  height: 65px;
+  background: #27ae60;
+  box-shadow: 0px 4px 9px rgb(4 117 52 / 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.register-modal .circle::after {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 75px;
+  left: -5px;
+  top: -5px;
+  border: 1px solid #6fcf97;
+  border-radius: 50%;
+}
+@media (min-width: 576px) {
+  .register-modal .modal-dialog {
+    max-width: 500px;
+    margin: 7rem auto;
+  }
+  .register-modal .contaniner-box {
+    margin: 13rem auto !important;
+  }
+}
+/* END:MODAL */
 @media (max-width: 992px) {
   /* NAV/TABLET->MOBI */
   nav{
@@ -818,6 +924,8 @@ footer .border-dash {
   }
   .performance .performance__img{
     display: none;
+  }
+  .performance__info .performance__info-detail .performance__info-detail{
   }
   
   .pricing-table .swiper .swiper-slide{

@@ -4,9 +4,9 @@ $( document ).ready(function() {
       var swiper = new Swiper(".pricingTable", {
         slidesPerView: 1.5,
         spaceBetween: 30,
-        slidesPerGroup: 1,
+        slidesPerGroup: 3,
         loop: true,
-        // loopFillGroupWithBlank: true,
+        loopFillGroupWithBlank: true,
         centeredSlides: true,
         pagination: {
           el: ".swiper-pagination",
