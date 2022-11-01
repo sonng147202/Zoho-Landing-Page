@@ -62,6 +62,7 @@ nav .intro{
   height: 40px;
   color: #000;
   font-weight: 600;
+  cursor: pointer;
 }
 
 nav .intro .line{
