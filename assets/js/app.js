@@ -14,13 +14,19 @@ $( document ).ready(function() {
       },
     ]
   });
+  $(window).scroll(function () {
+    console.log($(this).scrollTop());
+    $('nav').removeClass('shadow')
+    if($(this).scrollTop() > 100){
+      $('nav').addClass('shadow')
+    }
+  })
   $(window).resize(function() {
     if (window.matchMedia('(max-width: 992px)').matches) {
       
     }
 
     if (window.matchMedia('(max-width: 768px)').matches) {
-      
       // feature
       var tabStandard = $("#tab-standard");
       var tabRofessional= $("#tab-rofessional");
