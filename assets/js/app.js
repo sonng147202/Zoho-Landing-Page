@@ -1,4 +1,17 @@
 $( document ).ready(function() {
+  // To Top
+  $("nav .intro").click(function() {
+    $(window).scrollTop(0);
+  });
+  // Nav Shadow 
+  $(window).scroll(function () {
+    console.log($(this).scrollTop());
+    $('nav').removeClass('shadow')
+    if($(this).scrollTop() > 100){
+      $('nav').addClass('shadow')
+    }
+  })
+  // Slider Pricing Table
   $('.pricing-table').slick({
     arrows: false,
     centerMode: true,
@@ -14,18 +27,13 @@ $( document ).ready(function() {
       },
     ]
   });
-  $(window).scroll(function () {
-    console.log($(this).scrollTop());
-    $('nav').removeClass('shadow')
-    if($(this).scrollTop() > 100){
-      $('nav').addClass('shadow')
-    }
-  })
+  // Responsive
   $(window).resize(function() {
+    // 992px
     if (window.matchMedia('(max-width: 992px)').matches) {
       
     }
-
+    // 768px
     if (window.matchMedia('(max-width: 768px)').matches) {
       // feature
       var tabStandard = $("#tab-standard");
