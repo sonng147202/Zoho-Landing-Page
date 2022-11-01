@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoho Landing Page</title>
     <link rel="stylesheet" href="./assets/font/fontawesome-pro/css/all.css">
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/lib/slick/slick.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
-    
 </head>
 <body>
     <div id="main">
@@ -222,264 +221,296 @@
         </div>
         <div id="feature" class="feature">
             <div class="container">
-                <table class="feature__table table table-borderless">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="feature__table--col-title">Tính năng/Phiên bản</th>
-                            <th scope="col" class="feature__table--col-title text-center" id="tab-standard">Standard</th>
-                            <th scope="col" class="feature__table--col-title text-center" id="tab-rofessional">Professional</th>
-                        </tr>
-                    </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #FFBFBF80;">
-                                    Mail
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Email theo tên miền doanh nghiệp</td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Dung lượng file đính kèm</td>
-                                <td class="tabui">
-                                    500MB
-                                </td>
-                                <td class="tabhindin">
-                                    1GB
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Dung lượng lưu trữ email</td>
-                                <td class="tabui">
-                                    30GB/user
-                                </td>
-                                <td class="tabhindin">
-                                    100GB/user
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Khôi phục và sao lưu email</td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Lưu trữ và eDiscovery</td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Chữ ký số và mã hóa S-MIME</td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #BCF2BA80;">
-                                    WorkDrive		
-                                </td>
-                            </tr>
-                            <tr>
-                                <td >
-                                    Dung lượng drive
-                                    (Có thể chia sẻ trong nhóm) 
-                                </td>
-                                <td class="tabui">
-                                    10GB/user
-                                </td>
-                                <td class="tabhindin">
-                                    100GB/user
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Dung lượng file tải lên</td>
-                                <td class="tabui">
-                                    1GB
-                                </td>
-                                <td class="tabhindin">
-                                    1GB
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Thư mục chia sẻ nhóm</td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Xem trước hơn 160 định dạng file</td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Mã hóa trên thiết bị lưu trữ (AES 256 bit) 
-                                    và mã hóa SSL/TLS
-                                </td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #E2EEFF;">
-                                    Office		
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Bộ công cụ Writer - Sheet - Show</td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Số lượng thành viên cộng tác trong cùng 1 file
-                                </td>
-                                <td class="tabui">
-                                    50
-                                </td>
-                                <td class="tabhindin">
-                                    50
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #FEE7B280;">
-                                    Cliq	
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Dung lượng lưu trữ tập tin</td>
-                                <td class="tabui">
-                                    100GB cho doanh nghiệp
-                                </td>
-                                <td class="tabhindin">
-                                    100GB cho mỗi người dùng
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Số lượng thành viên cộng tác trong cùng 1 file
-                                </td>
-                                <td class="tabui">
-                                    100
-                                </td>
-                                <td class="tabhindin">
-                                    100
-                                </td>
-                            </tr>
-                            <tr>
-                                <td >
-                                    Đăng nhập một lần (SSO)
-                                </td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Tạo kênh chat với người ngoài doanh nghiệp
-                                </td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #7FA2E580;">
-                                    Meeting		
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Số lượng thành viên tối đa tham gia họp trực tuyến</td>
-                                <td class="tabui">
-                                    10
-                                </td>
-                                <td class="tabhindin">
-                                    100
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Số lượng bản ghi lưu trữ trên Cloud Zoho
-                                </td>
-                                <td class="tabui">
-                                    10
-                                </td>
-                                <td class="tabhindin">
-                                    10
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #BDAEF980;">
-                                    Dịch vụ hỗ trợ		
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Video training sử dụng Zoho</td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Hỗ trợ 24/7
-                                </td>
-                                <td class="tabui">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                                <td class="tabhindin">
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                        </tbody>
-                </table>
+                <div class="row">
+                    <div class="col-12">
+                        <table class="feature__table table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="feature__table--col-title">Tính năng/Phiên bản</th>
+                                    <th scope="col" class="feature__table--col-title text-center" id="tab-standard">Standard</th>
+                                    <th scope="col" class="feature__table--col-title text-center" id="tab-rofessional">Professional</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #FFBFBF80;">
+                                            Mail
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email theo tên miền doanh nghiệp</td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dung lượng file đính kèm</td>
+                                        <td class="tabui">
+                                            500MB
+                                        </td>
+                                        <td class="tabhindin">
+                                            1GB
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dung lượng lưu trữ email</td>
+                                        <td class="tabui">
+                                            30GB/user
+                                        </td>
+                                        <td class="tabhindin">
+                                            100GB/user
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Khôi phục và sao lưu email</td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lưu trữ và eDiscovery</td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chữ ký số và mã hóa S-MIME</td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #BCF2BA80;">
+                                            WorkDrive		
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td >
+                                            Dung lượng drive
+                                            (Có thể chia sẻ trong nhóm) 
+                                        </td>
+                                        <td class="tabui">
+                                            10GB/user
+                                        </td>
+                                        <td class="tabhindin">
+                                            100GB/user
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dung lượng file tải lên</td>
+                                        <td class="tabui">
+                                            1GB
+                                        </td>
+                                        <td class="tabhindin">
+                                            1GB
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thư mục chia sẻ nhóm</td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xem trước hơn 160 định dạng file</td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Mã hóa trên thiết bị lưu trữ (AES 256 bit) 
+                                            và mã hóa SSL/TLS
+                                        </td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #E2EEFF;">
+                                            Office		
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bộ công cụ Writer - Sheet - Show</td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Số lượng thành viên cộng tác trong cùng 1 file
+                                        </td>
+                                        <td class="tabui">
+                                            50
+                                        </td>
+                                        <td class="tabhindin">
+                                            50
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #FEE7B280;">
+                                            Cliq	
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dung lượng lưu trữ tập tin</td>
+                                        <td class="tabui">
+                                            100GB cho doanh nghiệp
+                                        </td>
+                                        <td class="tabhindin">
+                                            100GB cho mỗi người dùng
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Số lượng thành viên cộng tác trong cùng 1 file
+                                        </td>
+                                        <td class="tabui">
+                                            100
+                                        </td>
+                                        <td class="tabhindin">
+                                            100
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td >
+                                            Đăng nhập một lần (SSO)
+                                        </td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tạo kênh chat với người ngoài doanh nghiệp
+                                        </td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #7FA2E580;">
+                                            Meeting		
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Số lượng thành viên tối đa tham gia họp trực tuyến</td>
+                                        <td class="tabui">
+                                            10
+                                        </td>
+                                        <td class="tabhindin">
+                                            100
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Số lượng bản ghi lưu trữ trên Cloud Zoho
+                                        </td>
+                                        <td class="tabui">
+                                            10
+                                        </td>
+                                        <td class="tabhindin">
+                                            10
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" class="feature__table--tag-name" style="--bg-tag-name: #BDAEF980;">
+                                            Dịch vụ hỗ trợ		
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Video training sử dụng Zoho</td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Hỗ trợ 24/7
+                                        </td>
+                                        <td class="tabui">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                        <td class="tabhindin">
+                                            <i class="fa-solid fa-check"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12">
+                        <div class="feature__contact">
+                            <div class="feature__contact-row">
+                                <div class="feature__contact-col">
+                                    <h3>Liên hệ trực tiếp để được tư vấn</h3>
+                                </div>
+                                <div class="feature__contact-col">
+                                    <div class="content">
+                                        <p>
+                                            <i class="fa-regular fa-phone-volume"></i>
+                                            <span>Kinh doanh 24/7</span>
+                                        </p>
+                                        <h4>0246.688.6760</h4>
+                                    </div>
+                                </div>
+                                <div class="feature__contact-col">
+                                    <div class="content">
+                                        <p>
+                                            <i class="fa-regular fa-envelope"></i>
+                                            <span>Email</span>
+                                        </p>
+                                        <h4>sales@cls-vn.com</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="feature__contact-btn"  data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký dùng thử</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="capacity">
@@ -663,81 +694,126 @@
         </div>
         <div id="pricing-table" class="part-324 py-5">
             <h1 class="text-center mb-5">Bảng giá chi tiết</h1>
-            <!-- Swiper -->
-            <div class="pricing-table container my-5">
-                <div class="swiper-pagination"></div>
-                <div class="swiper pricingTable">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="pricing h-100 w-100">
-                                <h3 class="pricing-title">Mail Free</h3>
-                                <h1 class="pricing-package">Free vĩnh viễn</h1>
-                                <p>Email theo tên miền</p>
-                                <button class="pricing-btn" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký ngay</button>
-                                <p class="pricing-feature">
-                                    <i class="fa-solid fa-check"></i>
-                                    <span>Chỉ dùng tính năng Email</span>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa-solid fa-check"></i>
-                                    <span>Tối đa 5 user</span>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa-solid fa-check"></i>
-                                    <span>Dung lượng email 5GB/user</span>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa-solid fa-check"></i>
-                                    <span>Dung lượng tối đa file đính kèm email 25MB</span>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa-solid fa-check"></i>
-                                    <span>Dùng trên nền tảng Zoho Web Mail</span>
-                                </p>
-                            </div>
+            <div class="pricing-table container mb-5">
+                <div class="slick-slide">
+                    <div class="pricing h-100 w-100">
+                        <h3 class="pricing-title">Mail Free</h3>
+                        <h1 class="pricing-package">Free vĩnh viễn</h1>
+                        <p>Email theo tên miền</p>
+                        <button class="pricing-btn" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký ngay</button>
+                        <p class="pricing-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Chỉ dùng tính năng Email</span>
+                        </p>
+                        <p class="pricing-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Tối đa 5 user</span>
+                        </p>
+                        <p class="pricing-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Dung lượng email 5GB/user</span>
+                        </p>
+                        <p class="pricing-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Dung lượng tối đa file đính kèm email 25MB</span>
+                        </p>
+                        <p class="pricing-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Dùng trên nền tảng Zoho Web Mail</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="slick-slide">
+                    <div class="pricing h-100 w-100">
+                        <h3 class="pricing-title">Standard</h3>
+                        <h1 class="pricing-package">94,500 <span class="pricing-vnd">VND</span></h1>
+                        <p class="gray">/user/tháng</p>
+                        <button class="pricing-btn" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký ngay</button>
+                        <div class="pricing-recurring">
+                            Thanh toán hàng năm
                         </div>
-                        <div class="swiper-slide">
-                            <div class="pricing h-100 w-100">
-                                <h3 class="pricing-title">Standard</h3>
-                                <h1 class="pricing-package">94,500 <span class="pricing-vnd">VND</span></h1>
-                                <p class="gray">/user/tháng</p>
-                                <button class="pricing-btn" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký ngay</button>
-                                <div class="pricing-recurring">
-                                    Thanh toán hàng năm
-                                </div>
-                                <div class="pricing-only">
-                                    <span>Chỉ còn</span>
-                                    <h1>70,000 <span class="pricing-vnd">VND</span></h1>
-                                    <p class="gray">Email theo tên miền</p>
-                                </div>
-                            </div>
+                        <div class="pricing-only">
+                            <span>Chỉ còn</span>
+                            <h1>70,000 <span class="pricing-vnd">VND</span></h1>
+                            <p class="gray">Email theo tên miền</p>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="pricing h-100 w-100">
-                                <h3 class="pricing-title">Professional</h3>
-                                <h1 class="pricing-package">165,000 <span class="pricing-vnd">VND</span></h1>
-                                <p class="gray">Account/ tháng</p>
-                                <button class="pricing-btn" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký ngay</button>
-                                <div class="pricing-recurring">
-                                    Thanh toán hàng năm
-                                </div>
-                                <div class="pricing-only">
-                                    <span>Chỉ còn</span>
-                                    <h1>140,000 <span class="pricing-vnd">VND</span></h1>
-                                    <p class="gray">Email theo tên miền</p>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="slick-slide">
+                    <div class="pricing h-100 w-100">
+                        <h3 class="pricing-title">Professional</h3>
+                        <h1 class="pricing-package">165,000 <span class="pricing-vnd">VND</span></h1>
+                        <p class="gray">Account/ tháng</p>
+                        <button class="pricing-btn" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký ngay</button>
+                        <div class="pricing-recurring">
+                            Thanh toán hàng năm
+                        </div>
+                        <div class="pricing-only">
+                            <span>Chỉ còn</span>
+                            <h1>140,000 <span class="pricing-vnd">VND</span></h1>
+                            <p class="gray">Email theo tên miền</p>
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="discount-chart container py-5">
                 <h1 class="discount-chart__title">Dùng càng đông - Phí càng giảm</h1>
                 <div class="discount-chart__sub-title">
                     <p>Giá chưa bao gồm thuế nhà thầu FCT 10%</p>
                     <p>Dịch vụ không chịu VAT</p>
                 </div>
-                <img src="./assets/img/discount-chart.png" alt="">
+                <!-- <img src="./assets/img/discount-chart.png" alt=""> -->
+                <div class="chart">
+                    <div class="chart-item m-3" style="--chart-color:#27AE60;">
+                        <div class="arrow">
+                            <div class="rectangle">
+                                <i class="fas fa-user"></i>
+                                10 - 20 USER
+                            </div>
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="sale">
+                            Giảm ngay <span>7%</span> chi phí
+                        </div>
+                    </div>
+                    <div class="chart-item m-3" style="--chart-color:#1975D2;">
+                        <div class="arrow">
+                            <div class="rectangle">
+                                <i class="fas fa-user-friends"></i>
+                                21-100 user
+                            </div>
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="sale">
+                            Giảm ngay <span>10%</span> chi phí
+                        </div>
+                    </div>
+                    <div class="chart-item m-3" style="--chart-color:#E97730;">
+                        <div class="arrow">
+                            <div class="rectangle">
+                                <i class="fa-solid fa-people-group"></i>
+                                101-300 user
+                            </div>
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="sale">
+                            Giảm ngay <span>13%</span> chi phí
+                        </div>
+                    </div>
+                    <div class="chart-item m-3" style="--chart-color:#EB5757;">
+                        <div class="arrow">
+                            <div class="rectangle">
+                                <i class="fa-duotone fa-family"></i>
+                                Từ 301 user
+                            </div>
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="sale">
+                            Liên hệ <span>Hotline:19001768</span> để được tư vấn
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="advantages">
@@ -1034,9 +1110,9 @@
         </div>
     </div>
     <script src="./assets/font/fontawesome-pro/js/all.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/jquery/jquery.min.js"></script>
-    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/lib/slick/slick.min.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>

@@ -1,34 +1,26 @@
 $( document ).ready(function() {
+  $('.pricing-table').slick({
+    arrows: false,
+    centerMode: true,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          dots: true,
+          centerMode: true,
+          slidesToShow: 1
+        }
+      },
+    ]
+  });
   $(window).resize(function() {
+    if (window.matchMedia('(max-width: 992px)').matches) {
+      
+    }
+
     if (window.matchMedia('(max-width: 768px)').matches) {
-      var swiper = new Swiper(".pricingTable", {
-        slidesPerView: 1.5,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        centeredSlides: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          priceList: [
-            "Mail Free",
-            "Standard",
-            "Professional"      
-          ],
-          renderBullet: function (index, className) {
-            if (index == 0) {
-              return '<span class="' + className + '">' + "Mail Free" + "</span>";
-            }
-            if (index == 1) {
-              return '<span class="' + className + '">' + "Standard" + "</span>";
-            }
-            if (index == 2) {
-              return '<span class="' + className + '">' + "Professional" + "</span>";
-            }
-          },
-        },
-      });
+      
       // feature
       var tabStandard = $("#tab-standard");
       var tabRofessional= $("#tab-rofessional");
