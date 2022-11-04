@@ -5,7 +5,6 @@ $( document ).ready(function() {
   });
   // Nav Shadow 
   $(window).scroll(function () {
-    console.log($(this).scrollTop());
     $('nav').removeClass('shadow')
     if($(this).scrollTop() > 100){
       $('nav').addClass('shadow')
@@ -29,12 +28,17 @@ $( document ).ready(function() {
   });
   // Responsive
   $(window).resize(function() {
+    if (window.matchMedia('(min-width: 992px)').matches) {
+      $("#banner .content .right img").attr("src","./assets/img/banner.png");
+    }
     // 992px
     if (window.matchMedia('(max-width: 992px)').matches) {
       
     }
     // 768px
     if (window.matchMedia('(max-width: 768px)').matches) {
+      console.log($("#banner .content .right"));
+      $("#banner .content .right img").attr("src","./assets/img/banner-mobi.png");
       // feature
       var tabStandard = $("#tab-standard");
       var tabRofessional= $("#tab-rofessional");

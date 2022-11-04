@@ -315,13 +315,22 @@ nav .btn-hotline{
 }
 .feature .feature__table .feature__table--tag-name{
   background-color: var(--bg-tag-name);
-  font-weight: 600;
+}
+.feature .feature__table .feature__table--tag-name .tag{
+  display: flex;
+  align-items: center;
+}
+.feature .feature__table .feature__table--tag-name img{
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
 }
 .feature .feature__table .feature__table--tag-name h3{
   color: #413D3D;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 35px;
+  margin: 0;
 }
 .feature .feature__contact{
   display: flex;
@@ -945,7 +954,7 @@ footer .border-dash {
   /* NAV/TABLET->MOBI */
   nav{
     padding: 0;
-    z-index: 99999;
+    z-index: 9988;
   }
 
   nav .menu-btn{
@@ -1139,7 +1148,7 @@ footer .border-dash {
   .performance #info-2{
     background-color: #F2F2F2;
   }
-  .performance .performance__img{
+  .performance .p-col{
     display: none;
   }
   .performance__info .performance__info-detail .performance__info-detail{
