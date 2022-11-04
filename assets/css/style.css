@@ -859,6 +859,9 @@ footer .border-dash {
 /* END:FEATURE */
 
 /* MODAL */
+.register-modal .show{
+  z-index: 9999;
+}
 .register-modal .border-none {
   border-color: none !important;
   box-shadow: none !important;
@@ -869,6 +872,10 @@ footer .border-dash {
   align-items: center;
   padding: 5px;
   border-radius: 5px;
+}
+.register-modal .form-label {
+  padding: 0 10px;
+  cursor: pointer;
 }
 .register-modal .form-checked {
   border: none !important;
