@@ -406,6 +406,7 @@ nav .btn-hotline{
 .capacity .container{
   padding: 3.5rem 9.5rem;
   background-image: linear-gradient(to right, #FFFCF2,#FDF2CC);
+  position: relative;
 }
 .capacity .accordion .accordion-item{
   height: 6.25rem;
@@ -440,11 +441,32 @@ nav .btn-hotline{
   color: #000;
   font-weight: 700;
 }
-.capacity .warning{
+.capacity .container .warning{
   color: #e67e22;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
+}
+.capacity .container .block-1{
+  width: 7.5rem;
+  height: auto;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+}
+.capacity .container .block-2{
+  width: 7.5rem;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 1.5rem;
+}
+.capacity .block-3{
+  width: 7.5rem;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 1.5rem;
 }
 /* END:CAPACITY */
 
@@ -601,6 +623,7 @@ nav .btn-hotline{
   padding: 10px;
   margin: 15px 0;
   color: #FFFFFF;
+  text-align: center;
   font-weight: 700;
   background-color: #E97730;
   outline: none;
@@ -772,6 +795,17 @@ nav .btn-hotline{
   box-shadow: none;
   background-color: transparent;
 }
+.accordion .accordion-button .accordion-arrow{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+.accordion .accordion-button .accordion-arrow.up{
+  transform: rotate(180deg);
+}
 /* END:FAQ */
 
 /* FOOTER */
@@ -858,105 +892,7 @@ footer .border-dash {
 
 /* END:FEATURE */
 
-/* MODAL */
-.register-modal .show{
-  z-index: 9999;
-}
-.register-modal .border-none {
-  border-color: none !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-.register-modal .form-outline-box {
-  border: 1px solid #ced4da;
-  align-items: center;
-  padding: 5px;
-  border-radius: 5px;
-}
-.register-modal .form-label {
-  padding: 0 10px;
-  cursor: pointer;
-}
-.register-modal .form-checked {
-  border: none !important;
-}
-.register-modal .form-control:focus {
-  color: #212529;
-  border-color: none !important;
-  border: none !important;
-  outline: 0;
-  box-shadow: none !important;
-}
-.register-modal .btn-checked {
-  width: 235px;
-  height: 46px;
-  border: none !important;
-  background: #e97730 !important;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 34px;
-  color: #ffffff;
-}
-.register-modal .box-text {
-  margin-top: 84px;
-}
-.register-modal .title {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 133.52%;
-  text-align: center;
-  color: #202124;
-}
-.register-modal .content {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 151.02%;
-  text-align: center;
-  color: #545454;
-}
-.register-modal .circle {
-  position: absolute;
-  left: 212px;
-  top: 9px;
-  color: #FFFFFF;
-  text-align: center;
-  box-sizing: border-box;
-  margin: auto;
-  width: 65px;
-  height: 65px;
-  background: #27ae60;
-  box-shadow: 0px 4px 9px rgb(4 117 52 / 50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-.register-modal .circle::after {
-  position: absolute;
-  content: "";
-  width: 75px;
-  height: 75px;
-  left: -5px;
-  top: -5px;
-  border: 1px solid #6fcf97;
-  border-radius: 50%;
-}
-@media (min-width: 576px) {
-  .register-modal .modal-dialog {
-    max-width: 500px;
-    margin: 7rem auto;
-  }
-  .register-modal .contaniner-box {
-    margin: 13rem auto !important;
-  }
-}
-/* END:MODAL */
+
 @media (max-width: 992px) {
   /* NAV/TABLET->MOBI */
   nav{
