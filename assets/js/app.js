@@ -27,17 +27,17 @@ $( document ).ready(function() {
     ]
   });
 
-  var btnAccordion = $(".accordion .accordion-button");
-  var arrowAccordion = $(".accordion .accordion-button .accordion-arrow");
+  // var btnAccordion = $(".accordion .accordion-button");
+  // var arrowAccordion = $(".accordion .accordion-button .accordion-arrow");
 
-  for (let i = 0; i < arrowAccordion.length; i++) {
-    const btn = btnAccordion[i];
-    const arrow = arrowAccordion[i];
+  // for (let i = 0; i < arrowAccordion.length; i++) {
+  //   const btn = btnAccordion[i];
+  //   const arrow = arrowAccordion[i];
 
-    btn.click(() => {
-      arrow.toggleClass("up");
-    })
-  }
+  //   btn.click(() => {
+  //     arrow.toggleClass("up");
+  //   })
+  // }
   
   AOS.init();
 });
