@@ -393,6 +393,22 @@ nav .btn-hotline{
 }
 /* END:FEATURE */
 
+/* accordion */
+.accordion .accordion-button .accordion-arrow{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 20px;
+  transition: all 0.4s linear;
+}
+.accordion .accordion-button.up .accordion-arrow{
+  transform: rotate(180deg);
+  transition: all 0.4s linear;
+}
+/* END:accordion */
+
 /* CAPACITY */
 .capacity{
   margin: 50px 0;
@@ -429,6 +445,9 @@ nav .btn-hotline{
 }
 .capacity .accordion .accordion-item {
   font-size: 16px;
+}
+.capacity .accordion .accordion-arrow {
+  display: none;
 }
 .capacity .accordion .accordion-btn span{
   font-size: 14px;
@@ -795,17 +814,11 @@ nav .btn-hotline{
   box-shadow: none;
   background-color: transparent;
 }
-.accordion .accordion-button .accordion-arrow{
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  text-align: center;
-  line-height: 20px;
+.faq .accordion .accordion-arrow{
+  border: 1px solid #222222;
+  border-radius: 50%;
 }
-.accordion .accordion-button .accordion-arrow.up{
-  transform: rotate(180deg);
-}
+
 /* END:FAQ */
 
 /* FOOTER */
@@ -1000,6 +1013,7 @@ footer .border-dash {
   .capacity .accordion .accordion-item{
     height: auto;
   }
+  
   .part-324 .pricing-table{
     margin-top: 5rem;
   }
@@ -1084,7 +1098,10 @@ footer .border-dash {
   .capacity .container{
     padding: 50px 15px;
   }
-
+  .capacity .accordion .accordion-arrow {
+    display: block;
+  }
+  
   .performance .performance__info{
     padding: 25px 0;
   }

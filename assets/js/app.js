@@ -27,18 +27,16 @@ $( document ).ready(function() {
     ]
   });
 
-  // var btnAccordion = $(".accordion .accordion-button");
-  // var arrowAccordion = $(".accordion .accordion-button .accordion-arrow");
+  var btnAccordion = $(".accordion .accordion-button");
 
-  // for (let i = 0; i < arrowAccordion.length; i++) {
-  //   const btn = btnAccordion[i];
-  //   const arrow = arrowAccordion[i];
-
-  //   btn.click(() => {
-  //     arrow.toggleClass("up");
-  //   })
-  // }
+  for (let i = 0; i < btnAccordion.length; i++) {
+    const btn = $(btnAccordion[i]);
+    btn.on( "click", function() {
+      btn.toggleClass("up")
+    });
+  }
   
+  // btn.toggleClass("up");
   AOS.init();
 });
 // Responsive
@@ -52,7 +50,6 @@ $(window).resize(function() {
   }
   // 768px
   if (window.matchMedia('(max-width: 768px)').matches) {
-    console.log($("#banner .content .right"));
     $("#banner .content .right img").attr("src","./assets/img/banner-mobi.png");
     // feature
     var tabStandard = $("#tab-standard");
