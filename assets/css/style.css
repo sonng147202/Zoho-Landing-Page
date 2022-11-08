@@ -773,12 +773,12 @@ nav .btn-hotline{
   text-align: center;
 }
 .advantages .advantages-item{
-  height: 200px;
+  height: 100%;
   margin-bottom: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   font-weight: 600;
   text-align: center;
   background-color: #F1F1F1;
@@ -1074,9 +1074,6 @@ footer .border-dash {
     width: 14rem;
   }
 
-  .discount-chart .chart .chart-item{
-    flex-direction: column;
-  }
   .discount-chart .chart .chart-item:nth-child(1) .arrow{
     width: 100%;
   }
@@ -1118,6 +1115,10 @@ footer .border-dash {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .advantages .advantages-title{
+    padding: 0;
+  }
   
   .footer .footer__contact .item{
     margin-top: 5px;
@@ -1132,6 +1133,11 @@ footer .border-dash {
   }
   .footer .footer__nav .footer__sub-nav{
     margin-top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .discount-chart .chart .chart-item{
+    flex-direction: column;
   }
 }
 .tabui{
