@@ -404,6 +404,8 @@ nav .btn-hotline{
   transition: all 0.4s linear;
 }
 .accordion .accordion-button.up .accordion-arrow{
+  color: #1975D2;
+  border: 1px solid #1975D2;
   transform: rotate(180deg);
   transition: all 0.4s linear;
 }
