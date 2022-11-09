@@ -14,11 +14,17 @@ $( document ).ready(function() {
     var tabui= $(".tabui");
     var tabhindin= $(".tabhindin");
 
+    tabStandard.addClass("active");
+
     tabStandard.click(function () {
+      tabRofessional.removeClass("active")
+      tabStandard.addClass("active");
       tabui.css("display", "table-cell");
       tabhindin.css("display", "none");
     });
     tabRofessional.click(function () {
+      tabStandard.removeClass("active")
+      tabRofessional.addClass("active");
       tabhindin.css("display", "table-cell");
       tabui.css("display", "none");
     });

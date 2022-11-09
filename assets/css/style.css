@@ -302,6 +302,8 @@ nav .btn-hotline{
   font-size: 18px;
   line-height: 24px;
   padding: 15px 30px;
+  user-select: none;
+  cursor: pointer;
 }
 .feature .feature__table .feature__table--col-title:nth-child(1){
   background-color: #1975D2;
@@ -468,6 +470,7 @@ nav .btn-hotline{
 }
 .capacity .accordion .accordion-body code{
   color: #000;
+  font-size: 16px;
   font-weight: 700;
 }
 .capacity .container .warning{
@@ -1077,6 +1080,8 @@ footer .border-dash {
     display: none;
   }
 
+  .feature .feature__table .feature__table--col-title{
+  }
   .feature .feature__table .feature__table--col-title:nth-child(1){
     display: none;
   }
@@ -1085,6 +1090,15 @@ footer .border-dash {
   }
   .feature .feature__table .feature__table--col-title:nth-child(3){
     width: 14rem;
+    border-radius: 0;
+  }
+  .feature .feature__table .feature__table--col-title.active{
+    color: #fff;
+    background-color: #F0483E;
+  }
+  .feature .feature__table .feature__table--col-title:not(.active){
+    color: #000;
+    background-color: #F2F2F2;
   }
 
   .discount-chart .chart .chart-item:nth-child(1) .arrow{
