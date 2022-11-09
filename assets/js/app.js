@@ -7,7 +7,6 @@ $( document ).ready(function() {
   }
   // < 768px
   if (window.matchMedia('(max-width: 768px)').matches) {
-    $("#banner .content .right img").attr("src","./assets/img/banner-mobi.png");
     // feature
     var tabStandard = $("#tab-standard");
     var tabRofessional= $("#tab-rofessional");
@@ -29,15 +28,18 @@ $( document ).ready(function() {
       tabui.css("display", "none");
     });
   }
-  // > 992px
-  if (window.matchMedia('(min-width: 992px)').matches) {
-    $("#banner .content .right img").attr("src","./assets/img/banner.png");
+  $(window).resize(function(){
+    // > 576px
+    if (window.matchMedia('(max-width: 576px)').matches) {
+      $("#banner .content .right img").attr("src","./assets/img/banner-mobi.png");
 
-    var tabui= $(".tabui");
-    var tabhindin= $(".tabhindin");
-    tabui.css("display", "table-cell");
-    tabhindin.css("display", "table-cell");
-  }
+    }
+    // > 992px
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      $("#banner .content .right img").attr("src","./assets/img/banner.png");
+
+    }
+  });
 
   // To Top
   $("nav .intro").click(function() {
