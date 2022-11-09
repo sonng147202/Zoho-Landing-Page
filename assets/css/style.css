@@ -281,6 +281,7 @@ nav .btn-hotline{
   border: 1px solid #FFFFFF;
 }
 .feature .feature__table td{
+  vertical-align: middle;
   border: 1px solid #ecf0f1;
 }
 .feature .feature__table tbody tr td:nth-child(1){
@@ -331,6 +332,12 @@ nav .btn-hotline{
   font-size: 18px;
   line-height: 35px;
   margin: 0;
+}
+.feature .feature__table .tabui{
+  display: table-cell;
+}
+.feature .feature__table .tabhindin{
+  display: table-cell;
 }
 .feature .feature__contact{
   display: flex;
@@ -391,6 +398,7 @@ nav .btn-hotline{
   outline: none;
   border: none;
 }
+
 /* END:FEATURE */
 
 /* accordion */
@@ -553,11 +561,11 @@ nav .btn-hotline{
   left: 0;
 }
 .pricing-table .slick-dots li button {
-  width: 8rem;
-  height: 3rem;
+  width: 7rem;
+  height: 2.5rem;
   color: #000;
   text-align: center;
-  line-height: 50px;
+  line-height: 2.5rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -1019,6 +1027,7 @@ footer .border-dash {
   .part-324 .pricing-table{
     margin-top: 5rem;
   }
+  
   .feature .feature__contact .feature__contact-row{
     flex-direction: column;
   }
@@ -1062,7 +1071,9 @@ footer .border-dash {
     display: none;
   }
 
-  .tabhindin{
+  .feature .feature__table .tabui{
+  }
+  .feature .feature__table .tabhindin{
     display: none;
   }
 
@@ -1101,6 +1112,9 @@ footer .border-dash {
     display: block;
   }
   
+  .performance{
+    display: none;
+  }
   .performance .performance__info{
     padding: 25px 0;
   }
@@ -1141,7 +1155,7 @@ footer .border-dash {
   .discount-chart .chart .chart-item{
     flex-direction: column;
   }
-}
-.tabui{
-  display: block;
+  .tabhindin{
+    display: none;
+  }
 }

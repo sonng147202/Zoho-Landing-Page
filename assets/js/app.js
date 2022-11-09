@@ -1,4 +1,38 @@
 $( document ).ready(function() {
+  // Responsive
+  
+  // < 992px
+  if (window.matchMedia('(max-width: 992px)').matches) {
+    
+  }
+  // < 768px
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    $("#banner .content .right img").attr("src","./assets/img/banner-mobi.png");
+    // feature
+    var tabStandard = $("#tab-standard");
+    var tabRofessional= $("#tab-rofessional");
+    var tabui= $(".tabui");
+    var tabhindin= $(".tabhindin");
+
+    tabStandard.click(function () {
+      tabui.css("display", "table-cell");
+      tabhindin.css("display", "none");
+    });
+    tabRofessional.click(function () {
+      tabhindin.css("display", "table-cell");
+      tabui.css("display", "none");
+    });
+  }
+  // > 992px
+  if (window.matchMedia('(min-width: 992px)').matches) {
+    $("#banner .content .right img").attr("src","./assets/img/banner.png");
+
+    var tabui= $(".tabui");
+    var tabhindin= $(".tabhindin");
+    tabui.css("display", "table-cell");
+    tabhindin.css("display", "table-cell");
+  }
+
   // To Top
   $("nav .intro").click(function() {
     $(window).scrollTop(0);
@@ -39,31 +73,3 @@ $( document ).ready(function() {
   // btn.toggleClass("up");
   AOS.init();
 });
-// Responsive
-$(window).resize(function() {
-  if (window.matchMedia('(min-width: 992px)').matches) {
-    $("#banner .content .right img").attr("src","./assets/img/banner.png");
-  }
-  // 992px
-  if (window.matchMedia('(max-width: 992px)').matches) {
-    
-  }
-  // 768px
-  if (window.matchMedia('(max-width: 768px)').matches) {
-    $("#banner .content .right img").attr("src","./assets/img/banner-mobi.png");
-    // feature
-    var tabStandard = $("#tab-standard");
-    var tabRofessional= $("#tab-rofessional");
-    var tabui= $(".tabui");
-    var tabhindin= $(".tabhindin");
-
-    tabStandard.click(function () {
-      tabui.css("display", "block");
-      tabhindin.css("display", "none");
-    });
-    tabRofessional.click(function () {
-      tabhindin.css("display", "block");
-      tabui.css("display", "none");
-    });
-  }
-})
