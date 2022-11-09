@@ -615,10 +615,10 @@ nav .btn-hotline{
   padding: 80px 20px 50px;
   background: #fff;
 }
-.pricing-table .slick-slide:nth-child(2) .pricing{
+.pricing-table .slick-slide #slide-pricing-2{
   position: relative;
 }
-.pricing-table .slick-slide:nth-child(2) .pricing::before{
+.pricing-table .slick-slide #slide-pricing-2::before{
   content: "Most popular";
   padding: 0.375rem 0.75rem;
   color: #222222;
