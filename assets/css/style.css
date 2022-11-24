@@ -1091,10 +1091,6 @@ footer .border-dash {
     display: none;
   }
 
-  /* #banner .left h1{
-    white-space: unset;
-  } */
-
   .feature .feature__table .tabui{
   }
   .feature .feature__table .tabhindin{
@@ -1189,6 +1185,9 @@ footer .border-dash {
 @media (max-width: 576px) {
   .discount-chart .chart .chart-item{
     flex-direction: column;
+  }
+  #banner .left h1{
+    white-space: unset;
   }
   .tabhindin{
     display: none;
