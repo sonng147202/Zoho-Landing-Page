@@ -175,6 +175,7 @@ nav .btn-hotline{
 #banner .left h1{
   font-size: 45px;
   font-weight: 700;
+  white-space: nowrap;
 }
 #banner .btn-register{
   padding: 10px 20px;
@@ -1088,6 +1089,10 @@ footer .border-dash {
 @media (max-width: 768px) {
   .service .service__item .service__item--detail{
     display: none;
+  }
+
+  #banner .left h1{
+    white-space: unset;
   }
 
   .feature .feature__table .tabui{
