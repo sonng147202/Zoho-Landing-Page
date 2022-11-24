@@ -173,7 +173,7 @@ nav .btn-hotline{
 }
 
 #banner .left h1{
-  font-size: 45px;
+  font-size: 2.6rem;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -1091,9 +1091,9 @@ footer .border-dash {
     display: none;
   }
 
-  #banner .left h1{
+  /* #banner .left h1{
     white-space: unset;
-  }
+  } */
 
   .feature .feature__table .tabui{
   }
