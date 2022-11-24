@@ -49,8 +49,9 @@
                                 </div>
                             </div>
                         </div>
-                        <h1 class="mb-4" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1200">
-                            Zoho Mail & Zoho Workplace
+                        <h1 class="d-flex flex-column mb-4" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1200">
+                            <font>Zoho Mail &</font> 
+                            <font class="text-nowrap">Zoho Workplace</font>
                         </h1>
                         <p class="mb-4" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1200">
                             Giải pháp tuyệt vời thay thế Google Workspace và Microsoft 365 với chất lượng tương đương, nhưng giá rẻ hơn đến 50%
@@ -1335,24 +1336,23 @@
     <script src="./assets/js/app.js"></script>
     <script>
         var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "108132875380104");
+        chatbox.setAttribute("page_id", "588266534539046");
         chatbox.setAttribute("attribution", "biz_inbox");
     </script>
     <!-- Your SDK code -->
     <script>
         window.fbAsyncInit = function() {
-            FB.init({
+        FB.init({
             xfbml            : true,
             version          : 'v15.0'
-            });
+        });
         };
-
         (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
 </body>
